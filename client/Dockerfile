@@ -9,7 +9,7 @@ RUN npm install
 
 ADD . .
 
-RUN npm run build
+RUN npm run build:prod
 
 FROM nginx:alpine
 
