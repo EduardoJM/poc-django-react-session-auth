@@ -89,7 +89,12 @@ CORS_ALLOW_ALL_ORIGINS = True
 # Configs to use session auth from other sites
 #
 CORS_ALLOW_CREDENTIALS = True
-CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://localhost:5173']
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:8000',
+    'http://localhost:5173',
+    'https://api.poc.oliveiraedu.com.br',
+    'https://client.poc.oliveiraedu.com.br',
+]
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated'
